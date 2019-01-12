@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "362374643734",
+    "firebase_url": "https://noticeboard-203108.firebaseio.com",
+    "project_id": "noticeboard-203108",
+    "storage_bucket": "noticeboard-203108.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362374643734:android:ef4cc7253fbd2606",
+        "android_client_info": {
+          "package_name": "com.rajinder.noticeboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362374643734-q7s3r32fb9f028gouj7iklgnfn91dm2i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rajinder.noticeboard",
+            "certificate_hash": "2e4b8d74588ab360e02f7f3e507c1ed6cbfe22d5"
+          }
+        },
+        {
+          "client_id": "362374643734-8if0a8m9nscldilqtjjueihgntvctn6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjORAr2W6gjryK4OZb6lFDoQ5wzlyVdek"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362374643734-8if0a8m9nscldilqtjjueihgntvctn6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

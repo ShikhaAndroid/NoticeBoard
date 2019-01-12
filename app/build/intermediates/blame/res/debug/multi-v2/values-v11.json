@@ -1,0 +1,77 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\gyyffdrdc\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-ui-3.1.1.aar\\3a35b79c2ab6f1366a9bf715e6b05f30\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "315"
+                    },
+                    "to": {
+                        "startLines": "52",
+                        "startColumns": "4",
+                        "startOffsets": "3141",
+                        "endLines": "56",
+                        "endColumns": "12",
+                        "endOffsets": "3401"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\gyyffdrdc\\.gradle\\caches\\transforms-1\\files-1.1\\tweet-composer-3.1.1.aar\\9b3949a67c60184bd439b8ce0a82b17a\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,565",
+                        "endLines": "9,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "560,1076"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\gyyffdrdc\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-appinvite-12.0.1.aar\\0b10d84281ffb76dc4c052a5db1d25fe\\res\\values-v11\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "172",
+                        "endLines": "5",
+                        "endColumns": "8",
+                        "endOffsets": "293"
+                    },
+                    "to": {
+                        "startLines": "57",
+                        "startColumns": "4",
+                        "startOffsets": "3406",
+                        "endLines": "58",
+                        "endColumns": "8",
+                        "endOffsets": "3527"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\gyyffdrdc\\.gradle\\caches\\transforms-1\\files-1.1\\core-0.9.0.2.aar\\be81a223612c4f7c0079bdcd36436ad7\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2,19",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,1094",
+                        "endLines": "18,35",
+                        "endColumns": "12,12",
+                        "endOffsets": "1089,2110"
+                    },
+                    "to": {
+                        "startLines": "18,35",
+                        "startColumns": "4,4",
+                        "startOffsets": "1081,2120",
+                        "endLines": "34,51",
+                        "endColumns": "12,12",
+                        "endOffsets": "2115,3136"
+                    }
+                }
+            ]
+        }
+    ]
+}

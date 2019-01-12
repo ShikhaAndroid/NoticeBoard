@@ -1,0 +1,9 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_home" type="drawable">@drawable/svg_home</item>
+    <item name="ic_menu_createpost" type="drawable">@drawable/svg_editgray</item>
+    <item name="ic_menu_message" type="drawable">@drawable/svg_message</item>
+    <item name="ic_menu_notification" type="drawable">@drawable/svg_notification_fill</item>
+    <item name="ic_menu_posts" type="drawable">@drawable/svg_post</item>
+    <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
+    <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
+</resources>

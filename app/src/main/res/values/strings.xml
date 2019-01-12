@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">NoticeBoard</string>
+    <string name="notice_board">NOTICE BOARD</string>
+    <string name="message_title">Message</string>
+    <string name="accept">To accept</string>
+
+    <!--internet -->
+    <string name="network_connection">Connection Error</string>
+    <string name="you_are_not_connected_to_any_network_press_ok_to_change_settings">You are not connected to any network.Please check the setting</string>
+    <string name="ok_button">Ok</string>
+    <string name="exit">Cancel</string>
+    <string name="check_internet_connection">Check internet connection</string>
+    <string name="intermet_message">No Connection</string>
+    <string name="intermet_">We could not establish a connection with our servers. Please try again when you are connected to the internet.</string>
+
+
+    <!--Login/register view text-->
+    <string name="useroremail">Username or E-mail</string>
+    <string name="name">Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="email">Email ID</string>
+    <string name="conpassword">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="forgotstr">Forgot Password</string>
+    <string name="rememberme">Remember me</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="or">or</string>
+
+
+    <!--forgot text-->
+    <string name="forgotmsg">We just need your registered Email id to sent you password reset instructions.</string>
+    <string name="resetpassword">RESET PASSWORD</string>
+
+
+    <!--error message-->
+    <string name="emptyuser">Please enter the Phone number or E-mail</string>
+    <string name="emptypassword">Please Enter the Password</string>
+    <string name="validemail">Please Enter the valid Email ID</string>
+
+    <!--term candition-->
+    <string name="termstr">I agree with the terms and conditions.</string>
+    <string name="termstr1"> terms and conditions.</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Rajinder Android</string>
+    <string name="nav_header_subtitle">Rajinder.Singh@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="clear">CLEAR</string>
+    <string name="kms">Discover ads near you(Kms)</string>
+    <string name="choosecat">Choose Category</string>
+    <string name="apply">APPLY</string>
+    <string name="filter">Filter</string>
+    <string name="letscat">Let\'s select a category</string>
+    <string name="allcate">All Categories</string>
+    <string name="catId">catid</string>
+    <string name="catName">catname</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+
+    <string name="str_atv_places">Location</string>
+    <string name="api_key">AIzaSyDCpfFuPo5ReoE6e3ogPRpADp_7ePGHT80</string>
+    <string name="photo_video">Photo/Video</string>
+    <string name="location">Location</string>
+    <string name="title_activity_locatio_map">Map</string>
+
+
+    <!--FACEBOOK-->
+    <string name="facebook_app_id">364450224307888</string>  <!--2107238679304522-->
+    <string name="fb_login_protocol_scheme">fb2107238679304522</string>
+
+    <string name="notification">Notification</string>
+    <string name="title_activity_cat_detail">CatDetailActivity</string>
+    <string name="phonenumber">Phone Number</string>
+    <string name="comment">COMMENT</string>
+    <string name="viewprofile">VIEW PROFILE</string>
+    <string name="comments">Comments</string>
+    <string name="addcomment">Add a comment...</string>
+    <string name="post">Post</string>
+    <string name="your_categories">Your Categories</string>
+    <string name="empty_list">Empty List</string>
+    <string name="event_name">Event name</string>
+    <string name="for_sale">For Sale</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="emptylistmsgs">Sorry we couldn\'t find any matches for list empty</string>
+    <string name="edit">Done</string>
+    <string name="address">Address</string>
+    <string name="delete_post">Delete Post</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">Test</string>
+
+
+</resources>

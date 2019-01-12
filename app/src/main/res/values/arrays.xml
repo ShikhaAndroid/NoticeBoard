@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <array name="arraykms">
+        <item>Auto</item>
+        <item>"5"</item>
+        <item>"15"</item>
+        <item>"50"</item>
+        <item>"100"</item>
+        <item>"300"</item>
+        <item>Other</item>
+    </array>
+
+</resources>

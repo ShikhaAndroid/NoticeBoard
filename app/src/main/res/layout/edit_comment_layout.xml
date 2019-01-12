@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="@color/colorwhite"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.rajinder.noticeboard.Utils.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+
+        android:text="Edit"
+        android:textColor="@color/colorblack"
+        android:textSize="@dimen/txt22" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/padding20"
+        android:layout_marginRight="@dimen/txt20"
+        android:background="@color/background" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding5">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/user_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/padding10"
+            android:src="@drawable/emptyuser"
+            app:civ_border_color="#c1c1c1"
+            app:civ_border_width="1dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="#c1c1c1"
+            app:civ_shadow_radius="0" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding10"
+            android:layout_toEndOf="@+id/user_image"
+            android:layout_toRightOf="@+id/user_image"
+            android:background="@drawable/commentedtbg"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.rajinder.noticeboard.Utils.MyEditText
+                    android:id="@+id/edt_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding10"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:hint="@string/addcomment"
+                    android:padding="@dimen/padding5"
+                    android:textSize="@dimen/txt15" />
+
+                     </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginRight="@dimen/padding10"
+
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.rajinder.noticeboard.Utils.MyTextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/padding5"
+            android:background="@drawable/editbackground"
+            android:gravity="center"
+            android:paddingTop="@dimen/padding5"
+            android:paddingBottom="@dimen/padding5"
+            android:paddingLeft="@dimen/padding22"
+            android:paddingRight="@dimen/padding22"
+            android:text="Cancel"
+            android:textColor="@color/hintcolor" />
+        <com.rajinder.noticeboard.Utils.MyTextView
+            android:id="@+id/btn_post"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/padding5"
+            android:background="@drawable/btnbgwb"
+            android:gravity="center"
+            android:paddingTop="@dimen/padding5"
+            android:paddingBottom="@dimen/padding5"
+            android:paddingLeft="@dimen/padding22"
+            android:paddingRight="@dimen/padding22"
+            android:text="Update"
+            android:textColor="@color/hintcolor" />
+
+
+    </LinearLayout>
+</LinearLayout>

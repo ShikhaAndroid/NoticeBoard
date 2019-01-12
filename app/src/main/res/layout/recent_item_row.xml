@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/user_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding5"
+                android:background="@color/colorwhite"
+                android:src="@drawable/emptyuser"
+                app:civ_border_color="#c1c1c1"
+                app:civ_border_width="1dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#c1c1c1"
+                app:civ_shadow_radius="0" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/user_image2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/user_image"
+                android:layout_alignEnd="@+id/user_image"
+                android:layout_alignRight="@+id/user_image"
+                android:layout_gravity="center"
+                android:src="@drawable/emptyuser"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="1dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#c1c1c1"
+                app:civ_shadow_radius="0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/user_image"
+                android:layout_toRightOf="@+id/user_image"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.rajinder.noticeboard.Utils.MyTextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/user_image"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="Android user test"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/txt15" />
+
+                <com.rajinder.noticeboard.Utils.MyTextView
+                    android:id="@+id/user_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/user_name"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingTop="@dimen/padding3"
+                    android:text="liked Android user2 test comment testing data"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/txt12" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

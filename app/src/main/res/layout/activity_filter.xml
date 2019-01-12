@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        tools:context=".Activity.HomeActivities.FilterActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorwhite"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:toolbarId="@+id/toolbar">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar" />
+
+                <!--<TextView
+                    android:id="@+id/clear_filter_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear Filter"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="end|center"
+                    android:layout_marginRight="12dp"/>-->
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.rajinder.noticeboard.Utils.MyTextView
+                android:id="@+id/km_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding20"
+                android:paddingRight="@dimen/padding20"
+                android:paddingTop="@dimen/padding20"
+                android:text="@string/kms"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/hint_txt"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorwhite"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding20"
+                android:paddingTop="@dimen/padding20">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding10"
+                    android:paddingRight="@dimen/padding10">
+
+                    <com.warkiz.widget.IndicatorSeekBar
+                        android:id="@+id/seek_km"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:isb_clear_default_padding="false"
+                        app:isb_indicator_color="@color/edit_selected"
+                        app:isb_indicator_type="rounded_corners"
+                        app:isb_progress="0"
+                        app:isb_seek_bar_type="discrete_ticks_texts"
+                        app:isb_text_array="@array/arraykms"
+                        app:isb_text_color="@color/colorblack"
+                        app:isb_text_size="@dimen/hint_txt"
+                        app:isb_thumb_color="@color/edit_selected"
+                        app:isb_tick_color="@color/edit_selected"
+                        app:isb_tick_num="7"
+                        app:isb_tick_type="none"
+                        app:isb_track_progress_bar_color="@color/edit_selected" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.rajinder.noticeboard.Utils.MyTextView
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding20"
+                android:paddingTop="@dimen/padding10"
+                android:paddingBottom="@dimen/padding10"
+                android:paddingLeft="@dimen/padding20"
+                android:paddingRight="@dimen/padding20"
+                android:text="@string/choosecat"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/hint_txt"
+                android:textStyle="normal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/filter_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding20"
+                    android:layout_marginRight="@dimen/padding20"
+                    android:textSize="12sp"
+                    android:textColor="@color/txtcolord"
+                    android:visibility="gone"/>
+
+                <com.rajinder.noticeboard.Utils.AutofitRecyclerView
+                    android:id="@+id/recycler_cat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:paddingLeft="@dimen/padding10"
+                    android:paddingRight="@dimen/padding10"
+                    android:layout_above="@+id/viewab"
+                    android:background="@color/colorwhite"
+                    android:clipToPadding="false"
+                    android:columnWidth="70dp"
+                    android:overScrollMode="never">
+                </com.rajinder.noticeboard.Utils.AutofitRecyclerView>
+
+                <View
+                    android:id="@+id/viewab"
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_above="@+id/recycbelow"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <LinearLayout
+                    android:id="@+id/recycbelow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop=".5dp"
+                    android:background="@color/colorwhite"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding20"
+                    android:paddingLeft="@dimen/padding20"
+                    android:paddingRight="@dimen/padding20"
+                    android:paddingTop="@dimen/padding20">
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:visibility="invisible"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="150 results"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/hint_txt"
+                        android:typeface="sans" />
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:id="@+id/applybtn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btnbackground"
+                        android:gravity="center"
+                        android:padding="@dimen/padding10"
+                        android:text="@string/apply"
+                        android:textColor="@color/colorwhite" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/color_background"
+    android:layout_height="match_parent"
+    android:id="@+id/root_splash">
+
+
+
+    <ImageView
+        android:layout_margin="@dimen/padding20"
+        android:padding="@dimen/padding20"
+
+        android:src="@drawable/splashlogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

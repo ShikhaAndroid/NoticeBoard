@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.HomeActivities.SelectCategoryActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorwhite"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:toolbarId="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_collapseMode="pin">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar"
+                    app:layout_collapseMode="pin" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@color/background"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorwhite"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding10">
+    <LinearLayout
+        android:id="@+id/progress_layout"
+        android:paddingLeft="@dimen/padding20"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_weight=".8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical" />
+
+    <com.rajinder.noticeboard.Utils.MyTextView
+        android:text="find...."
+        android:padding="@dimen/padding10"
+        android:textColor="@color/hintcolor"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:id="@+id/current_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding20"
+                        android:layout_weight=".8"
+                        android:maxLines="2"
+                        android:paddingBottom="@dimen/padding10"
+                        android:paddingTop="@dimen/padding10"
+                        android:textColor="@color/colorblue"
+                        android:textSize="@dimen/txt15"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/btn_current"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/padding10"
+                        android:src="@android:drawable/ic_menu_mylocation" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@color/background" />
+
+                <LinearLayout
+                    android:id="@+id/change_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorwhite"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/padding10"
+                    android:paddingRight="@dimen/padding10">
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding20"
+                        android:layout_weight=".8"
+                        android:paddingBottom="@dimen/padding10"
+                        android:paddingTop="@dimen/padding10"
+                        android:text="CHANGE LOCATION"
+                        android:textColor="@color/colorblue"
+                        android:textSize="@dimen/txt15" />
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding20"
+                        android:layout_marginRight="@dimen/padding10"
+                        android:layout_weight=".8"
+                        android:gravity="right"
+                        android:paddingBottom="@dimen/padding10"
+                        android:paddingTop="@dimen/padding10"
+                        android:text="EDIT"
+                        android:textColor="@color/colorblue"
+                        android:textSize="@dimen/txt15" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding20"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding10"
+            android:text="@string/letscat">
+
+            <com.rajinder.noticeboard.Utils.MyTextView
+                android:layout_marginTop="@dimen/padding20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Showing Categories"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/txt15" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swifeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_cat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorwhite"
+                android:overScrollMode="never"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+
+

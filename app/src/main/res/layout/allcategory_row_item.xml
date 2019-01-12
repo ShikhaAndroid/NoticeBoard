@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding8"
+        android:background="@color/colorwhite"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/cate_image"
+            android:layout_width="@dimen/category_item_size"
+            android:layout_height="@dimen/category_item_size"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding5"
+            android:src="@drawable/demoimage3"
+            android:layout_alignParentLeft="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <com.rajinder.noticeboard.Utils.MyTextView
+                android:lines="1"
+                android:layout_weight=".8"
+                android:id="@+id/cate_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/txt16" />
+
+            <com.rajinder.noticeboard.Utils.MyCheckBox
+                android:id="@+id/cat_check"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/padding10"
+                android:layout_height="match_parent"
+                android:button="@drawable/checkbox"
+                android:textColor="@color/hintcolor"
+                android:textSize="@dimen/hint_txt" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

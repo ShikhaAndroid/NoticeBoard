@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.Profile.ViewProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/cover_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/app_bar_height"
+                        android:scaleType="centerCrop" />
+
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/cate_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignBottom="@+id/cover_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/padding20"
+                        app:civ_border_color="#ffffff"
+                        app:civ_border_width="2dp"
+                        app:civ_shadow="true"
+                        app:civ_shadow_color="#c1c1c1"
+                        app:civ_shadow_radius="0" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@drawable/transbackground">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="12dp">
+
+                        <ImageView
+                            android:id="@+id/btn_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:src="@drawable/svg_backwhite" />
+
+                        <com.rajinder.noticeboard.Utils.MyTextView
+                            android:id="@+id/title_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="CATE NAME"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/tool_txt"
+                            android:visibility="gone" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/padding10"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cover_img"
+            android:layout_margin="@dimen/padding10"
+            android:background="@color/colorwhite"
+            app:cardCornerRadius="@dimen/padding5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.rajinder.noticeboard.Utils.MyTextView
+                            android:id="@+id/p_username_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:capitalize="words"
+                            android:hint="user Name"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/txt22" />
+
+                        <com.rajinder.noticeboard.Utils.MyTextView
+                            android:id="@+id/p_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Email Id"
+                            android:paddingTop="@dimen/padding5"
+                            android:textColor="@color/txtcolord"
+                            android:textSize="@dimen/txt16" />
+
+                        <com.rajinder.noticeboard.Utils.MyTextView
+                            android:id="@+id/p_address_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Address"
+                            android:paddingTop="@dimen/padding5"
+                            android:textColor="@color/txtcolord"
+                            android:textSize="@dimen/txt16" />
+
+                        <com.rajinder.noticeboard.Utils.MyTextView
+                            android:id="@+id/p_phone_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Phone"
+                            android:paddingTop="@dimen/padding5"
+                            android:textColor="@color/txtcolord"
+                            android:textSize="@dimen/txt16" />
+
+                        <com.rajinder.noticeboard.Utils.MyTextView
+                            android:id="@+id/p_join_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:hint="On Notice Broad since"
+                            android:paddingTop="@dimen/padding5"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/txt12" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:layout_weight=".5"
+                android:background="@drawable/background"
+                app:cardCornerRadius="@dimen/padding5"
+                app:layout_collapseMode="pin">
+
+                <com.rajinder.noticeboard.Utils.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/padding10"
+                    android:text="Chat"
+                    android:id="@+id/p_chat"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/txt14"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin10"
+                android:layout_weight=".5"
+                android:background="@drawable/background"
+                app:cardCornerRadius="@dimen/padding5"
+                app:layout_collapseMode="pin">
+
+                <com.rajinder.noticeboard.Utils.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/p_call"
+                    android:padding="@dimen/padding10"
+                    android:text="Call"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/txt14"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <com.rajinder.noticeboard.Utils.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/txt12"
+            android:textColor="@color/hintcolor"
+            android:text="Powered By Notice Broad" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

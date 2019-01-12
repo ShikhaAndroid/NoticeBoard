@@ -1,0 +1,30 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/root"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- Tab title -->
+    <View
+        android:visibility="gone"
+        android:id="@+id/divide_view"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@color/hintcolor"
+        android:layout_alignBottom="@+id/tab_title" />
+
+    <com.rajinder.noticeboard.Utils.MyTextView
+        android:padding="@dimen/padding5"
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/txt11"
+        android:textColor="@color/hintcolor"
+   />
+
+    <!-- Tab divider -->
+
+</LinearLayout>

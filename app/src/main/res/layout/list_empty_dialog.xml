@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/padding10"
+    android:orientation="vertical">
+
+    <com.rajinder.noticeboard.Utils.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/empty_list"
+        android:textSize="@dimen/txt14" />
+
+    <com.rajinder.noticeboard.Utils.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding20"
+        android:text="@string/emptylistmsgs"
+        android:textSize="@dimen/txt12" />
+
+    <com.rajinder.noticeboard.Utils.MyTextView
+        android:id="@+id/try_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnbackground"
+        android:padding="@dimen/padding10"
+        android:text="TRY AGAIN"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/btn_txt" />
+</LinearLayout>

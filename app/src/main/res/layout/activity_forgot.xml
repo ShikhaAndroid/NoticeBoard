@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorwhite"
+        android:orientation="vertical"
+        tools:context=".Activity.Authentication.ForgotActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/toolbar" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/background" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding10"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding10">
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/forgotmsg"
+                        android:textColor="@color/hintcolor"
+                        android:textSize="@dimen/hint_txt" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding20"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding10">
+
+                        <ImageView
+
+                            android:id="@+id/img_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/svg_email" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding10">
+
+                            <com.rajinder.noticeboard.Utils.MyTextView
+                                android:id="@+id/ltxt1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/email"
+                                android:textColor="@color/hintcolor"
+                                android:textSize="@dimen/hint_txt" />
+
+                            <com.rajinder.noticeboard.Utils.MyEditText
+                                android:id="@+id/user_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ltxt1"
+                                android:paddingBottom="@dimen/padding10"
+                                android:paddingTop="@dimen/padding10"
+                                android:textSize="@dimen/edit_txt"
+                                android:textStyle="normal"
+                                android:theme="@style/MyEditTextTheme" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Or" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding20"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding10">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/svg_phone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding10">
+
+                            <com.rajinder.noticeboard.Utils.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="@string/phonenumber"
+                                android:textColor="@color/hintcolor"
+                                android:textSize="@dimen/hint_txt" />
+
+                            <com.rajinder.noticeboard.Utils.MyEditText
+                                android:id="@+id/phone_edit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ltxt1"
+                                android:paddingBottom="@dimen/padding10"
+                                android:paddingTop="@dimen/padding10"
+                                android:textSize="@dimen/edit_txt"
+                                android:textStyle="normal"
+                                android:theme="@style/MyEditTextTheme" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding15">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".3"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.8">
+
+                            <com.rajinder.noticeboard.Utils.MyTextView
+                                android:id="@+id/forgot_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/btnbackground"
+                                android:gravity="center"
+                                android:padding="@dimen/padding15"
+                                android:text="@string/resetpassword"
+                                android:textColor="@color/colorwhite"
+                                android:textSize="@dimen/btn_txt"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".3"></LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

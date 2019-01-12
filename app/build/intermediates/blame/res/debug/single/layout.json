@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\category_tab_row_item.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\category_tab_row_item.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\recent_item_row.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\recent_item_row.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_filter.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\activity_filter.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\notification_row_item.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\notification_row_item.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\change_password_dialog.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\change_password_dialog.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_filter_sub.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\activity_filter_sub.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_register.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_setting.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\fragment_setting.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_auth.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\activity_auth.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_row_item.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\item_row_item.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\template_filter_category.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\template_filter_category.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\subcategory_row_item.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\subcategory_row_item.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_tabcategory.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\activity_tabcategory.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_subcategory.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\activity_subcategory.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\view_item_row_post.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\view_item_row_post.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_notification.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\activity_notification.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\category_row_item.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\category_row_item.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_search.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\activity_search.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\comment_row_item_no.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\comment_row_item_no.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_edit_profile.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\activity_edit_profile.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\comment_row_item.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\comment_row_item.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_forgot.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\activity_forgot.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_category.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\activity_category.xml"
+    },
+    {
+        "merged": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\allcategory_row_item.xml",
+        "source": "D:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\src\\main\\res\\layout\\allcategory_row_item.xml"
+    }
+]

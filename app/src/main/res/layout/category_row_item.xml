@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_margin="@dimen/margin10"
+        android:id="@+id/linear_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/cate_image"
+            android:layout_width="@dimen/category_item_size"
+            android:layout_height="@dimen/category_item_size"
+            android:padding="@dimen/padding5"
+            android:visibility="gone"
+            android:src="@drawable/demoimage3" />
+
+        <com.rajinder.noticeboard.Utils.MyTextView
+            android:id="@+id/cate_name"
+            android:layout_marginRight="@dimen/padding20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/cate_image"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="dgfdgfdgdgdg"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/txt16"
+            android:layout_toRightOf="@+id/cate_image" />
+
+        <com.rajinder.noticeboard.Utils.MyCheckBox
+            android:id="@+id/btn_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/checkbox"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</layout>

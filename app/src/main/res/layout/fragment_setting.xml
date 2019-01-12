@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding10"
+                android:padding="@dimen/padding10"
+                app:cardCornerRadius="@dimen/padding5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding15">
+
+                        <com.rajinder.noticeboard.Utils.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/user_name"
+                            android:hint="@string/name"
+                            android:capitalize="words"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/txt18" />
+
+                        <com.rajinder.noticeboard.Utils.MyTextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/user_email"
+                            android:hint="@string/email"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/txt14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/background" />
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:id="@+id/btn_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/svg_editgray"
+                        android:padding="@dimen/padding15"
+                        android:text="Edit Profile"
+                        android:textColor="@color/txtcolor"
+                        android:textSize="@dimen/txt16" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/background" />
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:id="@+id/btn_change_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/svg_password"
+                        android:padding="@dimen/padding15"
+                        android:text="Change Password"
+                        android:textColor="@color/txtcolor"
+                        android:textSize="@dimen/txt16" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding10"
+                android:padding="@dimen/padding10"
+                app:cardCornerRadius="@dimen/padding5">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal">
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding15"
+                        android:text="Notification (OFF/ON)"
+                        android:textColor="@color/txtcolor"
+                        android:textSize="@dimen/txt16" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:checked="true"
+                        android:gravity="right"
+                        android:padding="@dimen/padding15"
+                        android:textColor="@color/txtcolor"
+                        android:textSize="@dimen/txt16" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding10"
+                android:padding="@dimen/padding10"
+                app:cardCornerRadius="@dimen/padding5">
+
+
+                <com.rajinder.noticeboard.Utils.MyTextView
+                    android:id="@+id/btn_custom_noti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding15"
+                    android:text="Custom Notification"
+                    android:textColor="@color/txtcolor"
+                    android:textSize="@dimen/txt16" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding10"
+                android:padding="@dimen/padding10"
+                app:cardCornerRadius="@dimen/padding5">
+
+
+                <com.rajinder.noticeboard.Utils.MyTextView
+                    android:id="@+id/btn_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:padding="@dimen/padding15"
+                    android:text="LOGOUT"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="@dimen/txt16" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout></android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

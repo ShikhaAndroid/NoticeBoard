@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="category"
+            type="com.rajinder.noticeboard.models.CategoryModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding10"
+       >
+
+
+        <ImageView
+            android:layout_margin="@dimen/padding10"
+            android:padding="@dimen/padding10"
+            android:src="@drawable/ic_demosub"
+            android:id="@+id/cate_image"
+            android:layout_width="@dimen/category_item_size"
+            android:layout_height="@dimen/category_item_size"
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+
+        <com.rajinder.noticeboard.Utils.MyTextView
+            android:layout_margin="@dimen/padding10"
+            android:id="@+id/cate_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/txtcolor"
+            android:textSize="@dimen/txt18"
+            android:drawableRight="@drawable/svg_arrow_right"
+             />
+
+
+    </LinearLayout>
+
+
+</layout>

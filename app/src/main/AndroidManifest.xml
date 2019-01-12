@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rajinder.noticeboard">
+
+    <!-- This permissions are neccessary for broadcast receiver -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.Manifest.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.Manifest.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/svg_circle"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/svg_circle"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.Authentication.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.Authentication.LoginActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activity.Authentication.ForgotActivity" />
+        <activity
+            android:name=".Activity.Authentication.RegisterActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.HomeActivities.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activity.HomeActivities.FilterActivity" />
+        <activity android:name=".Activity.HomeActivities.SubCategoryActivity" />
+        <activity android:name=".Activity.HomeActivities.MainCategoryActivity" />
+        <activity android:name=".Activity.HomeActivities.SelectCategoryActivity" />
+        <activity
+            android:name=".Activity.HomeActivities.PostActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Activity.HomeActivities.LocationMapActivity" />
+        <activity android:name=".Activity.HomeActivities.NotificationActivity" />
+        <activity android:name=".Activity.Profile.ViewProfileActivity" />
+        <activity android:name=".Activity.Profile.UserProfileActivity" />
+        <activity android:name=".Activity.HomeActivities.TabCategoryActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <!-- Google map -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBv_sOBAt2Mh40Njp4MwBtwK95voa8TejY" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- facebook -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1234"
+            android:exported="true" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="4adb5086ab1ab7e484b04bb556b05a2d81b712b6" />
+
+        <activity
+            android:name=".Activity.DetailView.CatDetailActivity"
+            android:label="@string/title_activity_cat_detail"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.DetailView.CommentActivity"
+            android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".Activity.Profile.EditProfileActivity" />
+        <activity android:name=".Activity.HomeActivities.SelectTabActivity" />
+
+        <service
+            android:name=".IntentService.BadgeIntentService"
+            android:exported="false" />
+
+        <provider
+            android:name="com.activeandroid.content.ContentProvider"
+            android:authorities="com.rajinder.noticeboard"
+            android:enabled="true"
+            android:exported="false" />
+        <provider
+            android:name=".Utils.DatabaseContentProvider"
+            android:authorities="com.rajinder.noticeboard.Utils.DatabaseContentProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <!-- SAVE DB -->
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="noticebroad.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="6" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.rajinder.noticeboard.models.SocialProfile,com.rajinder.noticeboard.models.UserInfo.User, com.rajinder.noticeboard.models.Category.Category" />
+
+        <service android:name=".Test.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+
+        <activity android:name=".Activity.HomeActivities.PostImagesListActivity" />
+        <activity android:name=".Activity.HomeActivities.FilterSubActivity"/>
+    </application>
+
+</manifest>

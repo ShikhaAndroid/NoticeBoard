@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/padding12">
+
+    <com.rajinder.noticeboard.Utils.MyTextView
+        android:id="@+id/mess_counter"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/circlebgcolor"
+        android:gravity="center"
+        android:text="3"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/txt12" />
+
+
+</RelativeLayout>
+

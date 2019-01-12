@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+<LinearLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+             />
+<com.rajinder.noticeboard.Utils.MyTextView
+    android:text="Logout"
+    android:padding="@dimen/padding10"
+    android:layout_gravity="left"
+    android:gravity="left"
+    android:id="@+id/title_txt"
+    android:textColor="@color/colorblack"
+    android:textSize="@dimen/txt20"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background"/>
+        <com.rajinder.noticeboard.Utils.MyTextView
+            android:id="@+id/text_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Are you sure you want to logout?"
+            android:textColor="#ff000000"
+            android:textSize="18sp" />
+<LinearLayout
+    android:gravity="right"
+    android:layout_gravity="right"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.rajinder.noticeboard.Utils.MyTextView
+        android:padding="@dimen/padding20"
+        android:textSize="@dimen/txt16"
+        android:text="Cancel"
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.rajinder.noticeboard.Utils.MyTextView
+        android:id="@+id/btn_ok"
+        android:textColor="@color/colorAccent"
+        android:padding="@dimen/padding20"
+        android:textSize="@dimen/txt16"
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

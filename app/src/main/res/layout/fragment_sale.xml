@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!--for sale -->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:fitsSystemWindows="true"
+        style="@style/ResizeWindow"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:id="@+id/create_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/post_images_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="180dp"
+                android:nestedScrollingEnabled="false"
+                android:background="@color/hintcolor">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/btn_image_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/color_background"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/padding5">
+
+                <com.rajinder.noticeboard.Utils.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD PHOTO"
+                    android:textColor="@color/colorwhite"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/create_sale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin10"
+            android:orientation="vertical">
+
+            <com.rajinder.noticeboard.Utils.MyEditText
+                android:id="@+id/sale_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editbackground1"
+                android:hint="@string/for_sale"
+                android:padding="@dimen/padding10"
+                android:singleLine="true"
+                android:textSize="@dimen/edit_txt" />
+
+            <LinearLayout
+                android:layout_below="@+id/sale_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorwhite"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding10">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/svg_time" />
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:id="@+id/end_date_sale"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:hint="End Date"
+                        android:textSize="@dimen/txt16" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding10">
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:id="@+id/end_time_sale"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="End Time"
+                        android:textSize="@dimen/txt16" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_margin="@dimen/margin10"
+                android:background="@color/viewcolor" />
+
+            <LinearLayout
+                android:id="@+id/price_view"
+                android:layout_below="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorwhite"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding10">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_price"
+                        android:tint="@color/hintcolor" />
+
+                    <com.rajinder.noticeboard.Utils.MyEditText
+                        android:id="@+id/price_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bkground"
+                        android:hint="Price"
+                        android:inputType="number"
+                        android:padding="@dimen/padding10"
+                        android:textSize="@dimen/txt16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_p"
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_margin="@dimen/margin10"
+                android:background="@color/viewcolor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorwhite"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding10">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/svg_locationcolor"
+                        android:tint="@color/hintcolor" />
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:id="@+id/location_sale"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:hint="Location"
+                        android:textSize="@dimen/txt16" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_margin="@dimen/margin10"
+                android:background="@color/viewcolor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorwhite"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding10">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/svg_edit"
+                        android:tint="@color/hintcolor" />
+
+                    <com.rajinder.noticeboard.Utils.MyEditText
+                        android:id="@+id/detail_sale_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bkground"
+                        android:hint="Details"
+                        android:padding="@dimen/padding10"
+                        android:inputType="textMultiLine"
+                        android:maxLines="6"
+                        android:isScrollContainer="true"
+                        android:focusable="true"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:textSize="@dimen/txt16" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="@color/background"
+                android:fitsSystemWindows="true">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorwhite"
+                    android:fitsSystemWindows="false"
+                    android:theme="@style/AppTheme.AppBarOverlay"
+                    app:elevation="0dp">
+
+                    <android.support.design.widget.CollapsingToolbarLayout
+                        android:id="@+id/toolbar_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorwhite"
+                        android:fitsSystemWindows="true"
+                        app:contentScrim="?attr/colorPrimary"
+                        app:layout_scrollFlags="scroll|enterAlways"
+                        app:toolbarId="@+id/toolbar">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <android.support.v7.widget.Toolbar
+                                android:id="@+id/toolbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="?attr/actionBarSize"
+                                android:background="@color/colorAccent"
+                                app:layout_collapseMode="pin"
+                                app:layout_scrollFlags="scroll|enterAlways">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="12dp">
+
+                                    <ImageView
+                                        android:id="@+id/btn_back"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="@dimen/padding5"
+                                        android:layout_marginRight="@dimen/padding10"
+                                        android:gravity="center"
+                                        android:src="@drawable/svg_backwhite" />
+
+                                    <com.rajinder.noticeboard.Utils.MyTextView
+                                        android:id="@+id/title_txt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_toEndOf="@+id/btn_back"
+                                        android:layout_toRightOf="@+id/btn_back"
+                                        android:gravity="center"
+                                        android:text="Create Post"
+                                        android:textColor="@color/colorwhite"
+                                        android:textSize="@dimen/tool_txt" />
+
+                                    <ImageView
+                                        android:id="@+id/btn_post"
+                                        android:layout_width="30dp"
+                                        android:layout_height="50dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_gravity="right|center"
+                                        android:layout_weight=".1"
+                                        android:padding="@dimen/padding5"
+                                        android:src="@drawable/svg_send" />
+
+
+                                </RelativeLayout>
+
+
+                            </android.support.v7.widget.Toolbar>
+
+
+                        </LinearLayout>
+                    </android.support.design.widget.CollapsingToolbarLayout>
+                </android.support.design.widget.AppBarLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <LinearLayout
+                        android:id="@+id/l2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorwhite"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding5">
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/user_image"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/padding5"
+                            android:src="@drawable/emptyuser"
+                            app:civ_border_color="#c1c1c1"
+                            app:civ_border_width="1dp"
+                            app:civ_shadow="true"
+                            app:civ_shadow_color="#c1c1c1"
+                            app:civ_shadow_radius="0" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding5"
+                            android:orientation="vertical">
+
+                            <com.rajinder.noticeboard.Utils.MyTextView
+                                android:id="@+id/user_name"
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/padding7"
+                                android:layout_toEndOf="@+id/user_image"
+                                android:layout_toRightOf="@+id/user_image"
+                                android:gravity="left|center"
+                                android:singleLine="true"
+                                android:text="Melanie J. Krach"
+                                android:textColor="@color/colorblack"
+                                android:textSize="@dimen/txt16" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding5"
+                                android:orientation="horizontal">
+
+                                <com.rajinder.noticeboard.Utils.MyTextView
+                                    android:id="@+id/txt_cate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/padding5"
+                                    android:background="@drawable/editbackground"
+
+                                    android:drawableRight="@drawable/svg_down_arrow"
+                                    android:gravity="center"
+                                    android:paddingBottom="@dimen/padding3"
+                                    android:paddingLeft="@dimen/padding10"
+                                    android:paddingRight="@dimen/padding5"
+                                    android:paddingTop="@dimen/padding3"
+                                    android:textColor="@color/colorblack"
+                                    android:textSize="@dimen/txt10" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/svg_arrow_right" />
+
+                                <com.rajinder.noticeboard.Utils.MyTextView
+                                    android:id="@+id/txt_subcate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/editbackground"
+                                    android:drawableRight="@drawable/svg_down_arrow"
+                                    android:gravity="center"
+                                    android:paddingBottom="@dimen/padding3"
+                                    android:paddingLeft="@dimen/padding10"
+                                    android:paddingRight="@dimen/padding5"
+                                    android:paddingTop="@dimen/padding3"
+                                    android:textColor="@color/colorblack"
+                                    android:textSize="@dimen/txt10" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/l2"
+                        android:orientation="vertical">
+
+                        <android.support.v4.widget.NestedScrollView
+                            android:id="@+id/n1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <com.rajinder.noticeboard.Utils.MyEditText
+                                    android:id="@+id/edt_post"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_above="@+id/set_image"
+                                    android:background="@color/background"
+                                    android:gravity="start"
+                                    android:hint="What would you like to post"
+                                    android:padding="@dimen/padding15"
+                                    android:textAlignment="viewStart"
+                                    android:textSize="@dimen/txt18" />
+
+                                <RelativeLayout
+                                    android:id="@+id/set_image_rel"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:id="@+id/set_image"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="250dp"
+                                        android:layout_margin="@dimen/padding10"
+                                        android:scaleType="fitXY" />
+
+                                    <ImageView
+                                        android:id="@+id/img_close"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_margin="@dimen/padding5"
+                                        android:background="@drawable/svg_graycircle"
+                                        android:padding="@dimen/padding8"
+                                        android:src="@drawable/svg_cancelw" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/set_map"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:visibility="gone">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="@dimen/padding10"
+                                        android:background="@drawable/background"
+                                        android:padding="@dimen/padding10">
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <ImageView
+                                                android:id="@+id/location_image"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentStart="true"
+                                                android:scaleType="center" />
+
+                                            <com.rajinder.noticeboard.Utils.MyTextView
+                                                android:id="@+id/txt_locationname"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/margin10"
+                                                android:layout_toEndOf="@+id/location_image"
+                                                android:layout_toRightOf="@+id/location_image"
+                                                android:ellipsize="end"
+                                                android:maxLines="3"
+                                                android:textColor="@color/colorblack"
+                                                android:textSize="@dimen/txt10" />
+
+                                            <RatingBar
+                                                android:id="@+id/location_rating"
+                                                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignLeft="@+id/txt_locationname"
+                                                android:layout_alignStart="@+id/txt_locationname"
+                                                android:layout_below="@+id/txt_locationname"
+                                                android:numStars="5" />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:id="@+id/map_close"
+                                        android:layout_width="25dp"
+                                        android:layout_height="25dp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_marginRight="@dimen/padding5"
+                                        android:background="@drawable/svg_graycircle"
+                                        android:padding="@dimen/padding8"
+                                        android:src="@drawable/svg_cancelw" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </android.support.v4.widget.NestedScrollView>
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.design.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight=".15"
+            android:background="@color/colorwhite"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <com.rajinder.noticeboard.Utils.MyTextView
+                android:id="@+id/add_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_picture"
+                android:drawablePadding="@dimen/padding10"
+                android:padding="@dimen/padding15"
+                android:text="@string/photo_video"
+                android:textSize="@dimen/txt18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="@color/background" />
+
+            <com.rajinder.noticeboard.Utils.MyTextView
+                android:id="@+id/btn_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/svg_locationcolor"
+                android:drawablePadding="@dimen/padding10"
+                android:padding="@dimen/padding15"
+                android:text="@string/location"
+                android:textSize="@dimen/txt18" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+

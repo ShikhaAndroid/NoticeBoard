@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.rajinder.noticeboard.Utils.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding5"
+        android:text="Verification Code"
+        android:textColor="@color/colorblack"
+        android:textSize="@dimen/txt18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding10">
+
+                <com.rajinder.noticeboard.Utils.MyTextView
+                    android:id="@+id/ltxt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding5"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="Please enter the verification code that We have send to your register Email/Phone."
+                    android:textColor="@color/hintcolor"
+                    android:textSize="@dimen/txt14" />
+
+                <com.rajinder.noticeboard.Utils.MyEditText
+                    android:id="@+id/otp_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ltxt1"
+                    android:paddingBottom="@dimen/padding10"
+                    android:paddingTop="@dimen/padding10"
+                    android:singleLine="true"
+
+                    android:textSize="@dimen/edit_txt"
+                    android:textStyle="normal"
+                    android:theme="@style/MyEditTextTheme" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8">
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:id="@+id/otp_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btnbackground"
+                        android:gravity="center"
+                        android:padding="@dimen/padding10"
+                        android:text="Confirm"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="@dimen/btn_txt"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"></LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/loader"
+        android:layout_width="@dimen/loading_size"
+        android:layout_height="@dimen/loading_size"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+#Fri Jan 11 16:14:42 IST 2019
+path.2=classes2.dex
+path.1=classes.dex
+path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.2=D\:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
+base.1=D\:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+base.0=D\:\\bharti\\NoticeBoard\\Project-20181005T033242Z-001\\Project\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2

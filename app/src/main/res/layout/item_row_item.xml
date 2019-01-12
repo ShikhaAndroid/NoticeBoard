@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top_linear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding15"
+            android:background="@color/background"
+            android:orientation="vertical"
+            android:visibility="gone"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom=".5dp"
+                android:background="@color/colorwhite"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/cate_image"
+                    android:layout_width="83dp"
+                    android:layout_height="83dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/padding8"
+                    android:background="@color/hintcolor"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/padding10"
+                    android:orientation="vertical">
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:id="@+id/cat_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/hintcolor"
+                        android:textSize="@dimen/txt13" />
+
+                    <com.rajinder.noticeboard.Utils.MyTextView
+                        android:ellipsize="end"
+                        android:id="@+id/cate_dis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|top"
+                        android:lines="2"
+                        android:paddingTop="@dimen/padding3"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/txt15" />
+
+                    <LinearLayout
+                        android:gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ratinglayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:gravity="bottom"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <RatingBar
+                                android:id="@+id/rating"
+                                style="@style/customRatingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:rating="3.5" />
+
+                            <com.rajinder.noticeboard.Utils.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="(0)"
+                                android:id="@+id/total_user"
+                                android:textColor="@color/colorblack"
+                                android:textSize="@dimen/hint_txt" />
+
+                        </LinearLayout>
+
+                        <com.rajinder.noticeboard.Utils.MyTextView
+                            android:id="@+id/cat_km"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:drawableLeft="@drawable/ic_location"
+                            android:gravity="center_vertical"
+                            android:text="wait..."
+                            android:textColor="@color/hintcolor"
+                            android:textSize="@dimen/txt10" />
+
+                        <com.rajinder.noticeboard.Utils.MyTextView
+                            android:id="@+id/txt_price"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".8"
+                            android:paddingLeft="@dimen/padding5"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/txt14"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/layfollow"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center|right">
+
+                            <!--Toggle use-->
+                            <com.rajinder.noticeboard.Utils.MyTextView
+                                android:id="@+id/txt_follow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/followbackground"
+                                android:drawableLeft="@drawable/svg_follow"
+                                android:drawablePadding="@dimen/padding5"
+                                android:gravity="center"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="3dp"
+                                android:text="Follow"
+                                android:textSize="@dimen/txt10" />
+
+                            <com.rajinder.noticeboard.Utils.MyTextView
+                                android:id="@+id/txt_following"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/editbackground"
+                                android:drawableLeft="@drawable/svg_following"
+                                android:drawablePadding="@dimen/padding5"
+                                android:gravity="center"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="3dp"
+                                android:text="Following"
+                                android:textColor="@color/colorblack"
+                                android:textSize="@dimen/txt10"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_linear"
+                android:layout_width="10dp"
+                android:layout_height="18dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/padding10"
+                android:layout_marginRight="@dimen/padding10"
+                android:background="@drawable/viewbackground"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/photo_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/padding10"
+                android:background="@drawable/tranpbackground"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:paddingLeft="@dimen/padding5"
+                    android:src="@drawable/svg_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <com.rajinder.noticeboard.Utils.MyTextView
+                android:paddingLeft="@dimen/padding5"
+                android:drawablePadding="3dp"
+                android:textColor="@color/colorwhite"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:paddingRight="@dimen/padding7"
+                android:text="Photo of the Week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt8"
+                android:orientation="vertical">
+
+            </com.rajinder.noticeboard.Utils.MyTextView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

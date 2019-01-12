@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius=".5dp">
+
+    <RelativeLayout
+        android:id="@+id/rel_cat"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/ll_imag"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/cate_image"
+                android:layout_width="50dp"
+                tools:src="@drawable/ic_demosub"
+                android:layout_height="50dp" /></LinearLayout>
+
+        <com.rajinder.noticeboard.Utils.MyTextView
+            android:id="@+id/cate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ll_imag"
+            android:gravity="right"
+            android:padding="@dimen/padding10"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/txt14"
+            tools:text="This is the title"
+            android:layout_toRightOf="@+id/ll_imag" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
